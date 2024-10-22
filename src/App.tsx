@@ -1,17 +1,22 @@
+
+import Layout from '@components/common/Layout';
+import About from '@pages/AboutPage';
+import Buttons from '@pages/ButtonsPage';
 import React from 'react';
-import { Button } from './components/common/Button';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 const App: React.FC = () => {
-    return <div>
-
-        <Button>Default Button</Button>
-        <Button variant="primary" size="large">Large Primary Button</Button>
-        <Button variant="secondary" size="small">Small Secondary Button</Button>
-        <Button variant="danger" onClick={() => console.log('Danger!')}>
-            Danger Button
-        </Button>
-
-    </div>
+    return (
+        <Router>
+            <Layout>
+                <Routes>
+                    <Route path="/buttons" element={<Buttons />} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
+            </Layout>
+        </Router>
+    )
 };
 
 export default App;

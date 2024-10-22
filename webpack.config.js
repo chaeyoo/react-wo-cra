@@ -6,6 +6,8 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
+        // 모든 asset의 기본 경로
+        publicPath: '/',
     },
     module: {
         rules: [
@@ -26,6 +28,11 @@ module.exports = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '.js'],
+        alias: {
+            '@pages': path.resolve(__dirname, 'src/pages'),
+            '@components': path.resolve(__dirname, 'src/components'),
+            '@common': path.resolve(__dirname, 'src/components/common'),
+        },
     },
     plugins: [
         new HtmlWebpackPlugin({
@@ -38,5 +45,7 @@ module.exports = {
         },
         port: 3000,
         open: true,
+        //  Client side routing
+        historyApiFallback: true,
     },
 };
