@@ -1,12 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {
-    LayoutContainer,
-    Header,
-    Nav,
-    Main,
-    Footer
-} from './Layout.styles';
+import { Header, LayoutContainer, Nav, Main, Footer } from '@layouts/MainLayout/MainLayout.styles';
+
 
 interface LayoutProps {
     children: React.ReactNode;
@@ -19,7 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <Nav>
                     <ul>
                         <li><Link to="/buttons">Button Groups</Link></li>
-                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/calculator">계산기</Link></li>
                     </ul>
                 </Nav>
             </Header>

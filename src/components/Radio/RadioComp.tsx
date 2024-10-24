@@ -1,4 +1,4 @@
-import { RadioProps } from "@common/Form/Radio/Radio.types";
+import { RadioProps } from "@components/Radio/Radio.types";
 
 export const Radio: React.FC<RadioProps> = ({ label, name, value, checked, onChange }) => {
     return (

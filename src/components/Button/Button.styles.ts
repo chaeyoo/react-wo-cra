@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { StyledButtonProps } from '@common/Button/Button.types';
+import { StyledButtonProps } from '@components/Button/Button.types';
 
 export const StyledButton = styled.button<StyledButtonProps>`
   border: none;

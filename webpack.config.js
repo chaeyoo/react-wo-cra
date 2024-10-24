@@ -31,7 +31,8 @@ module.exports = {
         alias: {
             '@pages': path.resolve(__dirname, 'src/pages'),
             '@components': path.resolve(__dirname, 'src/components'),
-            '@common': path.resolve(__dirname, 'src/components/common'),
+            '@layouts': path.resolve(__dirname, 'src/layouts'),
+            '@features': path.resolve(__dirname, 'src/features'),
         },
     },
     plugins: [

@@ -22,9 +22,18 @@
         "jsxImportSource": "@emotion/react",
         "baseUrl": "src",
         "paths": {
-            "@components/*": ["components/*"],
-            "@common/*": ["components/common/*"],
-            "@pages/*": ["pages/*"]
+            "@components/*": [
+                "components/*"
+            ],
+            "@pages/*": [
+                "pages/*"
+            ],
+            "@layouts/*": [
+                "layouts/*"
+            ],
+            "@features/*": [
+                "features/*"
+            ],
         }
     },
     "include": [
