@@ -8,6 +8,8 @@ import {
   Footer,
 } from "@layouts/MainLayout/MainLayout.styles";
 import { useTheme } from "@context/ThemeContext";
+import { ThemeToggle } from "./ThemeToggle";
+import { Flex } from "@components/Flex/Flex.styles";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -18,16 +20,19 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <LayoutContainer theme={theme}>
       <Header>
-        <Nav>
-          <ul>
-            <li>
-              <Link to="/buttons">Button Groups</Link>
-            </li>
-            <li>
-              <Link to="/calculator">계산기 - 리렌더링</Link>
-            </li>
-          </ul>
-        </Nav>
+        <Flex direction="row" justify="between">
+          <Nav>
+            <ul>
+              <li>
+                <Link to="/buttons">Button Groups</Link>
+              </li>
+              <li>
+                <Link to="/calculator">계산기 - 리렌더링</Link>
+              </li>
+            </ul>
+          </Nav>
+          <ThemeToggle />
+        </Flex>
       </Header>
       <Main>{children}</Main>
       <Footer>

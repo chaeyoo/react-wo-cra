@@ -194,7 +194,7 @@ features/
 | 드래그 앤 드롭 (Drag and Drop) | ▣ | ▢ | ▢ | | |
 | 자동 완성 (Autocomplete) | ▣ | ▢ | ▢ | | |
 | 폼 유효성 검사 (Form Validation) | ▣ | ▢ | ▢ | | |
-| 다크 모드 / 테마 전환 (Dark Mode / Theme Switching) | ▣ | ▢ | ▢ | | |
+| 다크 모드 / 테마 전환 (Dark Mode / Theme Switching) | ▢ | ▢ | ▣ | | |
 | 반응형 레이아웃 (Responsive Layout) | ▣ | ▢ | ▢ | | |
 | 데이터 캐싱 (Data Caching) | ▣ | ▢ | ▢ | | |
 | 지연 로딩 (Lazy Loading) | ▣ | ▢ | ▢ | | |

@@ -3,8 +3,6 @@ import { useTheme } from "@context/ThemeContext";
 import { Theme } from "../../types/theme";
 
 const ToggleButton = styled.button<{ theme: Theme }>`
-  background-color: ${({ theme }) => theme.colors.background};
-  color: ${({ theme }) => theme.colors.background};
   padding: 8px 16px;
   border: none;
   border-radius: 4px;
@@ -21,7 +19,7 @@ export const ThemeToggle: React.FC = () => {
 
   return (
     <ToggleButton onClick={toggleTheme} theme={theme}>
-      {isDark ? "☀️" : "🌙"}
+      <h2> {isDark ? "☀️" : "🌙"}</h2>
     </ToggleButton>
   );
 };

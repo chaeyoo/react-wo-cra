@@ -26,7 +26,6 @@ const App: React.FC = () => {
       <Router>
         <Global styles={globalStyles} />
         <Layout>
-          <ThemeToggle />
           <Routes>
             <Route path="/buttons" element={<Buttons />} />
             <Route path="/calculator" element={<CalcPage />} />
