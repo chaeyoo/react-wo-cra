@@ -1,11 +1,12 @@
 import styled from "@emotion/styled";
-import { useTheme } from "@context/ThemeContext";
 import { Theme } from "../../types/theme";
+import { useTheme } from "@hooks/useTheme";
 
 const ToggleButton = styled.button<{ theme: Theme }>`
-  padding: 8px 16px;
+  width: 50px;
+  height: 50px;
   border: none;
-  border-radius: 4px;
+  border-radius: 50%;
   cursor: pointer;
   transition: all 0.3s ease;
 
@@ -19,7 +20,7 @@ export const ThemeToggle: React.FC = () => {
 
   return (
     <ToggleButton onClick={toggleTheme} theme={theme}>
-      <h2> {isDark ? "☀️" : "🌙"}</h2>
+      <h1> {isDark ? "☀️" : "🌙"}</h1>
     </ToggleButton>
   );
 };

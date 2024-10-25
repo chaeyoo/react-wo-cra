@@ -1,6 +1,5 @@
 import { ThemeProvider } from "@context/ThemeContext";
 import Layout from "@layouts/MainLayout";
-import { ThemeToggle } from "@layouts/MainLayout/ThemeToggle";
 import Buttons from "@pages/ButtonsPage";
 import CalcPage from "@pages/CalcPage";
 import React from "react";

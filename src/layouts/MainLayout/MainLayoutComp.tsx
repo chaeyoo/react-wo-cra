@@ -7,9 +7,9 @@ import {
   Main,
   Footer,
 } from "@layouts/MainLayout/MainLayout.styles";
-import { useTheme } from "@context/ThemeContext";
 import { ThemeToggle } from "./ThemeToggle";
 import { Flex } from "@components/Flex/Flex.styles";
+import { useTheme } from "@hooks/useTheme";
 
 interface LayoutProps {
   children: React.ReactNode;
