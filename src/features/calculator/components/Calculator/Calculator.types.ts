@@ -2,11 +2,11 @@ export type OperationType = '+' | '-' | '*' | '/';
 
 export interface CalculatorProps {
     title: string;
-    theme?: 'light' | 'dark';
+    themeMode?: 'light' | 'dark';
 }
 
 export interface StyledCalculatorProps {
-    theme: 'light' | 'dark';
+    themeMode: 'light' | 'dark';
 }
 
 export type CalculationHistory = string[];

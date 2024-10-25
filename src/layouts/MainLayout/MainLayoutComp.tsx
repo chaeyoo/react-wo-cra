@@ -7,14 +7,16 @@ import {
   Main,
   Footer,
 } from "@layouts/MainLayout/MainLayout.styles";
+import { useTheme } from "@context/ThemeContext";
 
 interface LayoutProps {
   children: React.ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
+  const { theme } = useTheme();
   return (
-    <LayoutContainer>
+    <LayoutContainer theme={theme}>
       <Header>
         <Nav>
           <ul>

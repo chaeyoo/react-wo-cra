@@ -1,9 +1,13 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
+import { Theme } from "../../types/theme";
 
-export const LayoutContainer = styled.div`
+export const LayoutContainer = styled.div<{theme: Theme}>`
+  background-color: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.text};
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  transition: all 0.3s ease;
 `;
 
 export const Header = styled.header`
@@ -49,7 +53,7 @@ export const Main = styled.main`
 `;
 
 export const Footer = styled.footer`
-  background-color: #f8f9fa;
   padding: 1rem;
   text-align: center;
 `;
+

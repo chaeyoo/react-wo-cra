@@ -5,8 +5,8 @@ export const CalculatorWrapper = styled.div<StyledCalculatorProps>`
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: ${props => props.theme === 'dark' ? '#2d3748' : '#ffffff'};
-  color: ${props => props.theme === 'dark' ? '#ffffff' : '#2d3748'};
+  background-color: ${props => props.themeMode === 'dark' ? '#2d3748' : '#ffffff'};
+  color: ${props => props.themeMode === 'dark' ? '#ffffff' : '#2d3748'};
 `;
 
 export const InputGroup = styled.div`

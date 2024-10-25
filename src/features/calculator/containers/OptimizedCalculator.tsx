@@ -39,7 +39,7 @@ const HistoryList = React.memo(({ items }: { items: string[] }) => (
 
 export const OptimizedCalculator: React.FC<CalculatorProps> = ({
   title,
-  theme = "light",
+  themeMode = "light",
 }) => {
   const [firstNumber, setFirstNumber] = useState<string>("0");
   const [secondNumber, setSecondNumber] = useState<string>("0");
@@ -105,7 +105,7 @@ export const OptimizedCalculator: React.FC<CalculatorProps> = ({
   );
 
   return (
-    <S.CalculatorWrapper theme={theme}>
+    <S.CalculatorWrapper themeMode={themeMode}>
       <h2>{title}</h2>
       <S.InputGroup>
         <MemoizedInput

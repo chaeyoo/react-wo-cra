@@ -10,7 +10,7 @@ import { Select } from "@components/Select";
 
 export const InefficientCalculator: React.FC<CalculatorProps> = ({
   title,
-  theme = "light",
+  themeMode = "light",
 }) => {
   const [firstNumber, setFirstNumber] = useState<string>("0");
   const [secondNumber, setSecondNumber] = useState<string>("0");
@@ -45,7 +45,7 @@ export const InefficientCalculator: React.FC<CalculatorProps> = ({
   ));
 
   return (
-    <S.CalculatorWrapper theme={theme}>
+    <S.CalculatorWrapper themeMode={themeMode}>
       <h2>{title}</h2>
       <S.InputGroup>
         <Input
