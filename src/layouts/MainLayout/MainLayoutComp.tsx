@@ -29,6 +29,9 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <li>
                 <Link to="/calculator">계산기 - 리렌더링</Link>
               </li>
+              <li>
+                <Link to="/dnd">드래그앤드랍</Link>
+              </li>
             </ul>
           </Nav>
           <ThemeToggle />

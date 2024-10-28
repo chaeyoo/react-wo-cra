@@ -5,6 +5,7 @@ import CalcPage from "@pages/CalcPage";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Global } from "@emotion/react";
+import DndPage from "@pages/DndPage";
 
 const globalStyles = `
   * {
@@ -28,6 +29,7 @@ const App: React.FC = () => {
           <Routes>
             <Route path="/buttons" element={<Buttons />} />
             <Route path="/calculator" element={<CalcPage />} />
+            <Route path="/dnd" element={<DndPage />} />
           </Routes>
         </Layout>
       </Router>
